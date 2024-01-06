@@ -14,7 +14,7 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
 
 ## code generation:
 * in case of a python program => generate equivalent c file and a compiled executable.
-* in case of a python without main (python functions and classes) => pyccel treats them as a **python module** => won't generate a program, but will generate **Python C extension module** which can be imported from Python, and in addition it also generates equivalent c files. 
+* in case of a python without main (python functions and classes) => pyccel treats them as a **python module** => won't generate a program, but will generate **Python C extension module** which can be imported from Python(mod.<\TAG>.so), and in addition it also generates equivalent c files. 
     * Extending Python with C:
         * converting C to Python to increase performance.
         * https://www.youtube.com/watch?v=l8dRF_AnFE0
