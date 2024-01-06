@@ -23,5 +23,5 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
             - Pyobject Function to parse the C into Python
             - Method Definition
             - Module definition
-
+* complicated calculations using Open_MP
 
