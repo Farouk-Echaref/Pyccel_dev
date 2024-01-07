@@ -25,3 +25,16 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
             - Module definition
 * complicated calculations using Open_MP
 
+
+# Dev Docs:
+* Syntatic Stage.
+* Semantic Stage.
+* Code Generation Stage.
+* Wrapping Stage.
+* Compilation Stage.
+
+## Syntatic Stage:
+* Read input in Python AST and convert to Pyccel AST.
+### AST (AST Python):
+* https://www.youtube.com/watch?v=OjPT15y2EpE
+*
