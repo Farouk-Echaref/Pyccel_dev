@@ -37,4 +37,6 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
 * Read input in Python AST and convert to Pyccel AST.
 ### AST (AST Python):
 * https://www.youtube.com/watch?v=OjPT15y2EpE
-*
+* https://www.youtube.com/watch?v=Yq3wTWkoaYY
+* https://medium.com/@wshanshan/intro-to-python-ast-module-bbd22cd505f7
+
