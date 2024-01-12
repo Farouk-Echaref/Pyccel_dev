@@ -7,7 +7,7 @@
 https://towardsdatascience.com/understanding-reference-counting-in-python-3894b71b5611
 
 ## how pyccel works:
-* type inference
+* type inference (type inference: chose largest type)
 * Assumptions and Restrictions(cannot decide on type based on conditions and it cannot be changed)
 * type annotations in functions
 * Fortran/C/Open-MPI(for distributed-memory parallel programming)
@@ -39,4 +39,5 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
 * https://www.youtube.com/watch?v=OjPT15y2EpE
 * https://www.youtube.com/watch?v=Yq3wTWkoaYY
 * https://medium.com/@wshanshan/intro-to-python-ast-module-bbd22cd505f7
+
 

@@ -1,0 +1,28 @@
+python3 -m ast test.py > text.txt 
+
+Module(
+   body=[
+      Assign(
+         targets=[
+            Name(id='a', ctx=Store())],
+         value=Constant(value=2)),
+      Assign(
+         targets=[
+            Name(id='b', ctx=Store())],
+         value=BinOp(
+            left=Name(id='a', ctx=Load()),
+            op=Add(),
+            right=Constant(value=1))),
+      Expr(
+         value=Call(
+            func=Name(id='print', ctx=Load()),
+            args=[
+               Name(id='a', ctx=Load())],
+            keywords=[])),
+      Expr(
+         value=Call(
+            func=Name(id='print', ctx=Load()),
+            args=[
+               Name(id='b', ctx=Load())],
+            keywords=[]))],
+   type_ignores=[])
