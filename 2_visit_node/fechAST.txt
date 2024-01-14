@@ -1,0 +1,28 @@
+Module(
+   body=[
+      Assign(
+         targets=[
+            Name(id='a', ctx=Store())],
+         value=Constant(value=4)),
+      Assign(
+         targets=[
+            Name(id='b', ctx=Store())],
+         value=BinOp(
+            left=Name(id='a', ctx=Load()),
+            op=Add(),
+            right=Constant(value=1))),
+      Expr(
+         value=Call(
+            func=Name(id='print', ctx=Load()),
+            args=[
+               Name(id='b', ctx=Load())],
+            keywords=[])),
+      If(
+         test=Name(id='b', ctx=Load()),
+         body=[
+            Assign(
+               targets=[
+                  Name(id='a', ctx=Store())],
+               value=Name(id='b', ctx=Load()))],
+         orelse=[])],
+   type_ignores=[])

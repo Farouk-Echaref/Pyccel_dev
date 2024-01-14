@@ -40,4 +40,11 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
 * https://www.youtube.com/watch?v=Yq3wTWkoaYY
 * https://medium.com/@wshanshan/intro-to-python-ast-module-bbd22cd505f7
 
+* syntactic stage also handles parsing header comments. This is managed using textx.
+
+### Navigation and AST Creation:
+* Python visit ast nodes:
+https://www.youtube.com/watch?v=OjPT15y2EpE&t=380s
+In summary, when you uncomment the generic visit() method, it becomes the default method called for nodes that don't have a more specific visit_x() method. If you have both a generic visit() and a specific visit_x() method, both methods may get called for nodes of type "x." This is why you observe that it prints all nodes when you call visitor.visit_Assign(node) - it's using both methods.
+
 
