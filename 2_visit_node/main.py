@@ -10,6 +10,10 @@ class Visitor(ast.NodeVisitor):
     #     #using DFS, ensures that the traversal continues to visit the child nodes of the current node.
     #     self.generic_visit(node)
         
+    def visit_If(self, node: ast.AST):
+        print(node)
+        #using DFS, ensures that the traversal continues to visit the child nodes of the current node.
+        self.generic_visit(node)
     def visit_Assign(self, node: ast.AST):
         print(node)
         #using DFS, ensures that the traversal continues to visit the child nodes of the current node.
@@ -25,7 +29,7 @@ def main():
     node = ast.parse(code)
 
     visitor = Visitor()
-    visitor.visit_Assign(node)
+    visitor.visit(node)
     # print(node)
     # print(node._fields)
     # print(node.body)
