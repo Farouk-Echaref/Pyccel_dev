@@ -48,3 +48,11 @@ https://www.youtube.com/watch?v=OjPT15y2EpE&t=380s
 In summary, when you uncomment the generic visit() method, it becomes the default method called for nodes that don't have a more specific visit_x() method. If you have both a generic visit() and a specific visit_x() method, both methods may get called for nodes of type "x." This is why you observe that it prints all nodes when you call visitor.visit_Assign(node) - it's using both methods.
 
 
+## Order:
+* How an array is laid out in memory; Row-Major(C-style) or COlumn-Major(F-style).
+- For both C and F orders, the arrays are stored contiguously in memory, but they differ in how their entries are aranged.
+- Pyccel Doc: 
+https://github.com/pyccel/pyccel/blob/devel/developer_docs/order_docs.md
+- Wikipedia:
+https://en.wikipedia.org/wiki/Row-_and_column-major_order 
+
