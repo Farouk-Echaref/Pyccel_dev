@@ -61,16 +61,23 @@ https://en.wikipedia.org/wiki/Row-_and_column-major_order
 ##Pytest:
 
 ## Equivalent list methods from python to C/Fortran (STL & gFTL):
+### Data Mutations
 
-* `append()` <=>  `vec_X_value* vec_X_push(vec_X* self, i_key value)` <=> `subroutine push_back(v, value)`
-* `pop()` <=> `vec_X_value vec_X_pull(vec_X* self)` <=> `subroutine pop_back(v) (Fortran subroutine have no return value)`
-* `insert()` <=> `vec_X_iter vec_X_insert_(n/at)()` <=> `subroutine insert(v, pos, value)`
-* `clear()` <=> `void vec_X_clear(vec_X* self)` <=> `subroutine clear(v)`
-* `remove()` <=> `vec_X_iter vec_X_erase_(n/at)()` <=> `function erase(v, pos) result(iter)`
-* `index()` <=> `vec_X_iter vec_X_find(const vec_X* self, i_keyraw raw)` <=> `None`
-* `copy()` <=> `void vec_X_copy(vec_X* self, const vec_X* other)` <=> `None`
-* `sort()` <=> `void vec_X_sort(vec_X* self)` <=> `None`
-* `extend()` <=> `None` <=> `None`
-* `reverse()` <=> `None` <=> `None`
-* `count()` <=> `None` <=> `None`
-* `min()/max()` <=> `None` <=> `None`
+| Python Method | C Equivalent                                         | Fortran Equivalent                 |
+|---------------|------------------------------------------------------|------------------------------------|
+| `append()`    | `vec_X_value* vec_X_push(vec_X* self, i_key value)` | `subroutine push_back(v, value)`  |
+| `pop()`       | `vec_X_value vec_X_pull(vec_X* self)`               | `subroutine pop_back(v)`          |
+| `insert()`    | `vec_X_iter vec_X_insert_(n/at)()`                  | `subroutine insert(v, pos, value)`|
+| `clear()`     | `void vec_X_clear(vec_X* self)`                      | `subroutine clear(v)`             |
+| `remove()`    | `vec_X_iter vec_X_erase_(n/at)()`                   | `function erase(v, pos) result(iter)` |
+| `copy()`      | `void vec_X_copy(vec_X* self, const vec_X* other)`   | `None`                             |
+
+### Sorting and Iteration
+
+| Python Method | C Equivalent                         | Fortran Equivalent |
+|---------------|--------------------------------------|--------------------|
+| `sort()`      | `void vec_X_sort(vec_X* self)`       | `None`             |
+| `extend()`    | `None`                               | `None`             |
+| `reverse()`   | `None`                               | `None`             |
+| `count()`     | `None`                               | `None`             |
+| `min()/max()` | `None`                               | `None`             |
