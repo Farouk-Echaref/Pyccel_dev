@@ -77,6 +77,7 @@ https://en.wikipedia.org/wiki/Row-_and_column-major_order
 | Python Method | C Equivalent                         | Fortran Equivalent |
 |---------------|--------------------------------------|--------------------|
 | `sort()`      | `void vec_X_sort(vec_X* self)`       | `None`             |
+| `index()`    | `vec_X_iter vec_X_find()`            | `None`             |
 | `extend()`    | `None`                               | `None`             |
 | `reverse()`   | `None`                               | `None`             |
 | `count()`     | `None`                               | `None`             |
