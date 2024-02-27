@@ -16,6 +16,8 @@ https://towardsdatascience.com/understanding-reference-counting-in-python-3894b7
 * in case of a python program => generate equivalent c file and a compiled executable.
 * in case of a python without main (python functions and classes) => pyccel treats them as a **python module** => won't generate a program, but will generate **Python C extension module** which can be imported from Python(mod.<\TAG>.so), and in addition it also generates equivalent c files. 
     * Extending Python with C:
+        * using capsules:
+            - https://docs.python.org/3/extending/extending.html#using-capsules
         * converting C to Python to increase performance.
         * https://www.youtube.com/watch?v=l8dRF_AnFE0
         * steps:
@@ -63,4 +65,4 @@ https://en.wikipedia.org/wiki/Row-_and_column-major_order
 * `append()` <=>  `vec_X_value* vec_X_push(vec_X* self, i_key value)` <=> `subroutine push_back(v, value)`
 * `pop()` <=> `vec_X_value vec_X_pull(vec_X* self)` <=> `subroutine pop_back(v) (debatable since it doesn't return anything)`
 * `insert()` <=> `vec_X_iter vec_X_insert_n/at()` <=> `subroutine insert(v, pos, value)`
-* `clear()` <=> `void vec_X_clear(vec_X* self)` <=> `subroutine clear(v)``
+* `clear()` <=> `void vec_X_clear(vec_X* self)` <=> `subroutine clear(v)`
