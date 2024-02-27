@@ -58,3 +58,9 @@ https://en.wikipedia.org/wiki/Row-_and_column-major_order
 
 ##Pytest:
 
+## Equivalent list methods from python to C/Fortran (STL & gFTL):
+
+* `append()` <=>  `vec_X_value* vec_X_push(vec_X* self, i_key value)` <=> `subroutine push_back(v, value)`
+* `pop()` <=> `vec_X_value vec_X_pull(vec_X* self)` <=> `subroutine pop_back(v) (debatable since it doesn't return anything)`
+* `insert()` <=> `vec_X_iter vec_X_insert_n/at()` <=> `subroutine insert(v, pos, value)`
+* `clear()` <=> `void vec_X_clear(vec_X* self)` <=> `subroutine clear(v)``
