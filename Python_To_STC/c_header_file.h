@@ -7,7 +7,7 @@
 
 #define i_key int
 #define i_use_cmp // enable sorting/searhing using default <, == operators
-#include "stc/vec.h"
+#include "STC/include/stc/vec.h"
 
 #endif // _VEC_INT
 
@@ -16,7 +16,7 @@
 
 #define i_key float
 #define i_use_cmp // enable sorting/searhing using default <, == operators
-#include "stc/vec.h"
+#include "STC/include/stc/vec.h"
 
 #endif // _VEC_FLOAT
 

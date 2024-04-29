@@ -40,11 +40,12 @@
 
 - **(IN) copy_internal_library(lib_folder, pyccel_dirpath)** (e.g., copy math in `__pyccel__`)
 
-**Notes from the meeting:**
+**Notes:**
 - Check `copy_internal_library`.
 - Example to check `copy_internal_library`: test with import `gcd` from `math`.
 - Goal: Copy STC.
 - Goal 2: Declare header file with include vec.
 - In codegen check: print module, print module header ==> the order of the call of those printers.
+- Pyccel free functions should call STC `drop()` methods
 - Test in eppycel, return one element.
 - Goal: Modify `copy_internal_library` for external library.
