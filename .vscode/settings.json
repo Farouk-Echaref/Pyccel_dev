@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "c_header_file.h": "c",
+        "stdio.h": "c",
+        "vec.h": "c"
+    }
+}

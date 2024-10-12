@@ -24,12 +24,12 @@ void declare_init(void)
 /*........................................*/
 
 // void declare__free(vec_int *a, vec_int *b)
-void declare_free()
-{
-    if (initialised)
-    {
-        vec_int_drop(a);
-        vec_float_drop(b);
-        initialised = 0;
-    }
-}
+// void declare_free()
+// {
+//     if (initialised)
+//     {
+//         vec_int_drop(a);
+//         vec_float_drop(b);
+//         initialised = 0;
+//     }
+// }

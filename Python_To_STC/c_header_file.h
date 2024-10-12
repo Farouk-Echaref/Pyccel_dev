@@ -1,23 +1,15 @@
 #ifndef MY_FILE_H
 #define MY_FILE_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#ifndef _VEC_INT_64_T
+#define _VEC_INT_64_T
 
-#ifndef _VEC_INT
-#define _VEC_INT
-
-#define i_key int
+#define i_key int64_t
+#define i_keyraw int64_t
 #define i_use_cmp // enable sorting/searhing using default <, == operators
 #include "STC/include/stc/vec.h"
-
-#endif // _VEC_INT
-
-#ifndef _VEC_FLOAT
-#define _VEC_FLOAT
-
-#define i_key float
-#define i_use_cmp // enable sorting/searhing using default <, == operators
-#include "STC/include/stc/vec.h"
-
-#endif // _VEC_FLOAT
+#endif
 
 #endif // MY_FILE_H
